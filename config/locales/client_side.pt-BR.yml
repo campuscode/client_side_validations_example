@@ -1,0 +1,16 @@
+pt-BR:
+  back: Voltar
+  edit: Editar
+  customers:
+    new:
+      title: Novo Cliente
+  activerecord:
+    models:
+      customer: Cliente
+    attributes:
+      customer:
+        name: Nome
+        cpf: CPF
+        address_number: Número
+        address_street: Logradouro
+        cep: CEP

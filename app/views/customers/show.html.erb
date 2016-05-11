@@ -1,24 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= t 'activerecord.attributes.customer.name' %></strong>
   <%= @customer.name %>
 </p>
 
 <p>
-  <strong>Cpf:</strong>
+  <strong><%= t 'activerecord.attributes.customer.cpf' %></strong>
   <%= @customer.cpf %>
 </p>
 
 <p>
-  <strong>Address street:</strong>
+  <strong><%= t 'activerecord.attributes.customer.address_street' %></strong>
   <%= @customer.address_street %>
 </p>
 
 <p>
-  <strong>Address number:</strong>
+  <strong><%= t 'activerecord.attributes.customer.address_number' %></strong>
   <%= @customer.address_number %>
 </p>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<p>
+  <strong><%= t 'activerecord.attributes.customer.cep' %></strong>
+  <%= @customer.cep %>
+</p>
+
+<%= link_to t('edit'), edit_customer_path(@customer) %> |
+<%= link_to t('back'), customers_path %>
